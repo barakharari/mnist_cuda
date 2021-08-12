@@ -183,7 +183,7 @@ void fp_fc_seq(float nodes[FCSIZE], float inps[ISIZE], float weights[FCSIZE][ISI
 	//bias
 		nodes[i] += bias[i];
 	//relu
-		nodes[i] = max((float)0, nodes[i]);
+		nodes[i] = std::max((float)0, nodes[i]);
 	}
 }
 
